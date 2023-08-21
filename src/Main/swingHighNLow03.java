@@ -236,6 +236,7 @@ public class swingHighNLow03 extends JFrame {
 			centerEastNorthImg.setFont(new Font("Meiryou", Font.BOLD, 32));
 			centerEastNorthImg.setText("Counterpart Cards : " + cardEastCount);
 			checkCardsAfterGame(cardWestList, cardEastList);
+			newGame.setVisible(false);
 		} else if (cardEastCount == 1) {
 			title.setFont(new Font("Meiryou", Font.BOLD, 24));
 			title.setText("You Lost T.T!!! Your Counterpart declared One Card!!");
@@ -244,6 +245,7 @@ public class swingHighNLow03 extends JFrame {
 			centerEastNorthImg.setFont(new Font("Meiryou", Font.BOLD, 32));
 			centerEastNorthImg.setText("Counterpart Cards : " + cardEastCount);
 			checkCardsAfterGame(cardWestList, cardEastList);
+			newGame.setVisible(false);
 		}		
 	}
 
@@ -273,6 +275,7 @@ public class swingHighNLow03 extends JFrame {
 			cardWestNumToStr = String.valueOf(cardWestNum);
 		}
 		centerWestCenterNum.setText(cardWestNumToStr);
+		
 	}
 
 	/***** 정보 출력 *****/
