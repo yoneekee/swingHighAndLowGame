@@ -24,6 +24,18 @@ public class swingHighNLow extends JFrame {
 			"spade.jpg"
 	};
 
+	/*** 카드 52장에 대한 배열 ***/
+	public static int [] cardAll() {
+		int [] allCards = {};
+		int cardTotal = 52;
+		
+		for(int i = 0; i < cardTotal; i++) {
+			allCards[i] = (i + 1);
+		}
+		
+		return allCards;
+	}
+	
 	/***** 0-3 : 카드 이미지 리스트에서 랜덤 인덱스로 하나 가져 올 함수 *****/
 	public static int getRandomImgNum() {
 		int result = 0;
@@ -41,8 +53,8 @@ public class swingHighNLow extends JFrame {
 		int result1 = 1; //= (int) (Math.random() * 9) + 1;
 
 		while (true) {
-			result0 = (int) (Math.random() * 9) + 1;
-			result1 = (int) (Math.random() * 9) + 1;
+			result0 = (int) (Math.random() * 13) + 1;
+			result1 = (int) (Math.random() * 13) + 1;
 
 			if (result0 != result1) {
 				result[0] = result0;
