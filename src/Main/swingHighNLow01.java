@@ -14,7 +14,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-public class swingHighNLow extends JFrame {
+public class swingHighNLow01 extends JFrame {
 
 	/***** 카드 이미지 배열 리스트로 만들어 놓기 *****/
 	String cardImgList[] = {
@@ -93,7 +93,7 @@ public class swingHighNLow extends JFrame {
 	int winCount = 0;
 
 	/***** 생성자에 다 넣어 놓으면 객체 생성만 해도 자바 스윙 화면 출력 *****/
-	public swingHighNLow() {
+	public swingHighNLow01() {
 
 		/***** 기본 화면 설정 *****/
 		this.setTitle("High AND Low GAME :) !");
